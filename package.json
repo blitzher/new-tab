@@ -1,0 +1,10 @@
+{
+  "name": "new-tab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "blitzher <skovboorg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-maker": "^1.10.5"
+  }
+}

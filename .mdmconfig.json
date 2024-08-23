@@ -1,0 +1,13 @@
+{
+	"opts": {
+		"src": "src",
+		"verbose": false,
+		"debug": false,
+		"output": "dist/bundle.md",
+		"max-depth": 3,
+		"toc-level": 3,
+		"watch": false,
+		"html": true,
+		"allow-undefined": true
+	}
+}

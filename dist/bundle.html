@@ -1,0 +1,110 @@
+<script>w=new WebSocket("ws:localhost:7788");w.addEventListener("message",(e)=>   {if(e.data=="refresh")location.reload();});</script>
+<style>
+html {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* asign text color to var */
+:root {
+    --text-color: rgb(139, 139, 139);;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+html {
+    --s: 34px; /* control the size*/
+    --c1: #27003a;
+    --c2: #190528;
+    
+    --_g: radial-gradient(calc(var(--s)/2),var(--c1) 97%,#0000);
+    background:
+      var(--_g),var(--_g) calc(2*var(--s)) calc(2*var(--s)),
+      repeating-conic-gradient(from 45deg,#0000 0 25%,var(--c2) 0 50%) calc(-.707*var(--s)) calc(-.707*var(--s)),
+      repeating-linear-gradient(135deg,var(--c1) calc(var(--s)/-2) calc(var(--s)/2),var(--c2) 0 calc(2.328*var(--s)));
+    background-size: calc(4*var(--s)) calc(4*var(--s));
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+h1 {
+    font-style: italic;
+    letter-spacing: 0.2em;
+}
+
+#q {
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    height: 2em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00000000;
+    color: var(--text-color);
+
+    
+    
+}
+
+.main {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: var(--text-color);
+    border: 1px solid #ffffff60;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#top-bar {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#top-bar > *:first-child{
+    margin-right: 10px;
+}
+
+</style>
+<meta http-equiv="Content-Security-Policy" content="script-src 'nonce-2726c7f26c'">
+
+<div id="top-bar">
+    <p>quick links<p>
+</div>
+
+<div class="main">
+
+<h1 id="hello">Hello</h1><input id="q" autofocus type="text" placeholder="google" autocomplete="off">
+
+</div>
+
+<script nonce="2726c7f26c" src="../src/script.js"></script>
+
