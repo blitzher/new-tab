@@ -3,17 +3,15 @@
 </style>
 <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-2726c7f26c'">
 
-
 <div id="top-bar">
     <p>quick links<p>
 </div>
 
 <div class="main">
 
-# Hello
+# hello
 
-<input id="q" autofocus type="text" placeholder="google" autocomplete="off">
-
+<input id="q" autofocus type="text" placeholder=" google" autocomplete="off">
 
 </div>
 
